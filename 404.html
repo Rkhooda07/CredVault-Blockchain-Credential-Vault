@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content="0; url=./" />
+    <script>
+      // SPA fallback for GitHub Pages
+      // Redirect any 404 to the app root so React Router can handle it
+      (function() {
+        var path = window.location.pathname;
+        var repoBase = "/Decentralised-credential-vault/";
+        if (!path.endsWith("/")) path += "/";
+        var newUrl = repoBase + "#" + path.replace(repoBase, "");
+        // Use hash fallback then try root as well
+        window.location.replace(repoBase);
+      })();
+    </script>
+  </head>
+  <body></body>
+  </html>
+
+
