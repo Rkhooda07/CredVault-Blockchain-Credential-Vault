@@ -8,11 +8,11 @@
       // SPA fallback for GitHub Pages
       // Redirect any 404 to the app root so React Router can handle it
       (function() {
-        // Derive base from current path (owner.github.io/repo[/subpaths])
-        var path = window.location.pathname;
-        var segments = path.split("/").filter(Boolean);
+        // Preserve the attempted path by appending it as a hash to the repo base
+        var path = window.location.pathname + window.location.search + window.location.hash;
+        var segments = window.location.pathname.split("/").filter(Boolean);
         var base = segments.length > 0 ? "/" + segments[0] + "/" : "/";
-        window.location.replace(base);
+        window.location.replace(base + "#" + path.replace(base, ""));
       })();
     </script>
   </head>
