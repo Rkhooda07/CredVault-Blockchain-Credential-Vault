@@ -97,7 +97,7 @@ export default function Landing() {
       <section className="py-20 bg-secondary/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Why Choose CertifyChain?</h2>
+            <h2 className="text-4xl font-bold mb-4">Why Choose CredVault?</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Built on cutting-edge blockchain technology to ensure your credentials are secure, 
               verifiable, and accessible globally.
